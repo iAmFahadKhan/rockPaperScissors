@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS-GAME</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- scoreboard -->
+      <div class="scoreboard">
+        <div class="title">
+          <img src="title.png" />
+        </div>
+        <div class="score">
+          <p>SCORE</p>
+          <h1>0</h1>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div class="hands">
+        <div class="paper hand">
+          <img src="Paper.png" onclick='pickuserhand("paper")' />
+        </div>
+        <div class="scissors hand">
+          <img src="Scissors.png" onclick='pickuserhand("scissors")' />
+        </div>
+        <div class="rock hand">
+          <img src="Rock.png" onclick='pickuserhand("rock")' />
+        </div>
+      </div>
+        <!-- results -->
+      <div class="contest">
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div class="img-hand-container">
+                <img src="Paper.png" id="userimg">
+            </div>
+        </div>
+        <div class="referee">
+            <div class="result">
+                <h1>You Win!</h1>
+            </div>
+            <div class="playagain"><button onclick="restartGame()">Play again</button></div>
+        </div>
+        <div class="computerhand">
+            <h1>SYSTEM PICKED</h1>
+            <div class="img-hand-container">
+                <img src="Rock.png" id="computerimg">
+            </div>
+        </div>
+
+      </div>
+    </div>
+      <div id="copyright">Developed by <a href="https://github.com/jsNoobSaiBot"> <i class="fa fa-github" style="font-size:24px"></i>jsNoobSaiBot</a></div>
+    <script src="script.js"></script>
+  </body>
+</html>
